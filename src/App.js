@@ -1,24 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import NameForm from './NameForm';
+import RSVPlist from './RSVPlist';
+// import GuestNames from './GuestNames';
+import Header from './Header';
 
 function App() {
+  // const [firstName, setFirstName] = useState();
+  // const [lastName, setLastName] = useState();
+  // const [fullName, setFullName] = useState();
+
+  // function addName(evt) {
+  //   (evt) => {
+  //     const newValue = evt.target.value;
+  //     setFullName(newValue);
+  //   };
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header>
+        <h1>Guest List</h1>
+      </Header>
+      <div>
+        {/* <NameForm /> */}
+        <div>
+          <RSVPlist
+          // firstName={firstName}
+          // setFirstName={setFirstName}
+          // lastName={lastName}
+          // setLastName={setLastName}
+          // fullName={fullName}
+          // setFullName={setFullName}
+          // addName={addName}
+          />
+        </div>
+        {/* <GuestNames props={RSVPlist} /> */}
+      </div>
     </div>
   );
 }
